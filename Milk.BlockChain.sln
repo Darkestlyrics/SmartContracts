@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32112.339
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Milk.BlockChain", "Milk.BlockChain\Milk.BlockChain.csproj", "{7D9221C7-9BC3-42DB-B852-9F5F8A984B20}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Milk.BlockChain.Web", "Milk.BlockChain.Web\Milk.BlockChain.Web.csproj", "{965625FD-76E7-4CA5-9524-1E22103EAF8B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Milk.SmartContract", "Milk.SmartContract\Milk.SmartContract.csproj", "{EEBCDBAF-48F4-4B32-8CFB-20F02837DCAF}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Milk.CodeEngine", "Milk.CodeEngine\Milk.CodeEngine.csproj", "{38441BA9-B66E-479A-BB33-1587F387E50D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Milk.BlockChain.Test", "Milk.BlockChain.Test\Milk.BlockChain.Test.csproj", "{05BCEBE3-7F4E-4774-AE2E-2AB44E01DFF8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7D9221C7-9BC3-42DB-B852-9F5F8A984B20}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7D9221C7-9BC3-42DB-B852-9F5F8A984B20}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7D9221C7-9BC3-42DB-B852-9F5F8A984B20}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7D9221C7-9BC3-42DB-B852-9F5F8A984B20}.Release|Any CPU.Build.0 = Release|Any CPU
+		{965625FD-76E7-4CA5-9524-1E22103EAF8B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{965625FD-76E7-4CA5-9524-1E22103EAF8B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{965625FD-76E7-4CA5-9524-1E22103EAF8B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{965625FD-76E7-4CA5-9524-1E22103EAF8B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EEBCDBAF-48F4-4B32-8CFB-20F02837DCAF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EEBCDBAF-48F4-4B32-8CFB-20F02837DCAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EEBCDBAF-48F4-4B32-8CFB-20F02837DCAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EEBCDBAF-48F4-4B32-8CFB-20F02837DCAF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{38441BA9-B66E-479A-BB33-1587F387E50D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38441BA9-B66E-479A-BB33-1587F387E50D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38441BA9-B66E-479A-BB33-1587F387E50D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38441BA9-B66E-479A-BB33-1587F387E50D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{05BCEBE3-7F4E-4774-AE2E-2AB44E01DFF8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{05BCEBE3-7F4E-4774-AE2E-2AB44E01DFF8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{05BCEBE3-7F4E-4774-AE2E-2AB44E01DFF8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{05BCEBE3-7F4E-4774-AE2E-2AB44E01DFF8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9D42A5EF-5CA7-44E9-988D-FDEF798D905D}
+	EndGlobalSection
+EndGlobal
