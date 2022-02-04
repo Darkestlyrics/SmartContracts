@@ -14,10 +14,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Models\Responses\" />
-    <Folder Include="Models\Requests\" />
-    <Folder Include="Core\Interface\" />
-    <Folder Include="Core\Implementation\" />
+    <ProjectReference Include="..\Milk.BlockChain\Milk.BlockChain.csproj" />
+    <ProjectReference Include="..\Milk.SmartContract\Milk.SmartContract.csproj" />
   </ItemGroup>
 
 </Project>

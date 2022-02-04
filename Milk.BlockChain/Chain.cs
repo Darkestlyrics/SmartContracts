@@ -2,6 +2,7 @@
 {
     public class Chain<T>
     {
+        public Guid Id { get; set; }
         public List<Block<T>> Blocks;
 
         private readonly int _difficulty;
@@ -10,6 +11,7 @@
 
         public Chain(T data, int difficulty)
         {
+            Id = Guid.NewGuid();
             _difficulty = difficulty;
             Blocks = new List<Block<T>>()
             {
