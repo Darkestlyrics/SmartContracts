@@ -11,7 +11,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Milk.SmartContract", "Milk.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Milk.CodeEngine", "Milk.CodeEngine\Milk.CodeEngine.csproj", "{38441BA9-B66E-479A-BB33-1587F387E50D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Milk.BlockChain.Test", "Milk.BlockChain.Test\Milk.BlockChain.Test.csproj", "{05BCEBE3-7F4E-4774-AE2E-2AB44E01DFF8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Milk.BlockChain.Test", "Milk.BlockChain.Test\Milk.BlockChain.Test.csproj", "{05BCEBE3-7F4E-4774-AE2E-2AB44E01DFF8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Milk.SmartContract.Web", "Milk.SmartContract.Web\Milk.SmartContract.Web.csproj", "{96D2967F-10A5-4143-8D6D-C01A2BF45608}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{05BCEBE3-7F4E-4774-AE2E-2AB44E01DFF8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{05BCEBE3-7F4E-4774-AE2E-2AB44E01DFF8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{05BCEBE3-7F4E-4774-AE2E-2AB44E01DFF8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{96D2967F-10A5-4143-8D6D-C01A2BF45608}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{96D2967F-10A5-4143-8D6D-C01A2BF45608}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{96D2967F-10A5-4143-8D6D-C01A2BF45608}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{96D2967F-10A5-4143-8D6D-C01A2BF45608}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
