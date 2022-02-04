@@ -8,7 +8,7 @@ namespace Milk.BlockChain.Test.SmartContract
     public class SmartContractExecutorTests
     {
 
-        private string _validCode = @"
+        private readonly string _validCode = @"
 using System;
 using Milk.CodeEngine.Core.Interface;
 
@@ -29,7 +29,7 @@ public class testScript : IScript
         Console.WriteLine(""Success"");
     }
 }";
-        private string _invalidCode = @"
+        private readonly string _invalidCode = @"
 using System;
 using Milk.CodeEngine.Core.Interface
 
@@ -50,7 +50,7 @@ public class testScript : IScript
         Console.WriteLine(""Success"");
     }
 }";
-        private string _emptyCode = @"";
+        private readonly string _emptyCode = @"";
 
 
         private SmartContractExecutor CreateSmartContractExecutor()

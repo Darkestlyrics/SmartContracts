@@ -7,7 +7,7 @@
 
         private readonly int _difficulty;
 
-        private List<T> _pending = new();
+        private readonly List<T> _pending = new();
 
         public Chain(T data, int difficulty)
         {

@@ -8,23 +8,34 @@ namespace Milk.SmartContract.Web.Core.Implementation
 {
     public class SmartContractService :ISmartContractService
     {
-        private RestClient _restClient;
+        private readonly RestClient _restClient;
 
-        public SmartContractService(RestClient restClient)
+        public SmartContractService()
         {
-            RestClientOptions options = new RestClientOptions(""); //TODO get this
+            RestClientOptions options = new RestClientOptions("http://localhost:5111"); 
             _restClient = new RestClient(options);
         }
 
         public async Task<AddSmartContractResponse> AddSmartContract(AddSmartContractRequest request)
         {
-            RestRequest req = new RestRequest(request.ToString(), Method.Post);
-            AddBlockResponse? response = await _restClient.PostAsync<AddBlockResponse>(req);
-            return new AddSmartContractResponse()
+            AddSmartContractResponse response = new AddSmartContractResponse("")
             {
-                IsSuccessful = response.IsSuccessful,
-                Message = response.Message
+                IsSuccessful = true
             };
+            try
+            {
+                RestRequest req = new RestRequest(request.ToString(), Method.Post);
+                AddBlockResponse? blockResponse = await _restClient.PostAsync<AddBlockResponse>(req);
+                response.IsSuccessful = blockResponse.IsSuccessful;
+                response.Message = blockResponse.Message;
+            }
+            catch (Exception ex)
+            {
+                response.IsSuccessful = false;
+                response.Message = ex.Message;
+            }
+
+            return response;
 
         }
     }

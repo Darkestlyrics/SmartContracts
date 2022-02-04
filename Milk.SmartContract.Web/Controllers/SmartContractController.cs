@@ -12,7 +12,7 @@ namespace Milk.SmartContract.Web.Controllers
     [ApiController]
     public class SmartContractController : ControllerBase
     {
-        private ISmartContractService _smartContractService;
+        private readonly ISmartContractService _smartContractService;
 
         public SmartContractController(ISmartContractService smartContractService)
         {

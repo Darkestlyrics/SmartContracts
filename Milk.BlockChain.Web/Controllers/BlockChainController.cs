@@ -11,7 +11,7 @@ namespace Milk.BlockChain.Web.Controllers
     [ApiController]
     public class BlockChainController : ControllerBase
     {
-        private IBlockChainService _blockChainService;
+        private readonly IBlockChainService _blockChainService;
 
         public BlockChainController(IBlockChainService blockChainService)
         {

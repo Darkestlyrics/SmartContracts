@@ -9,7 +9,7 @@ namespace Milk.BlockChain.Web.Core.Implementation
     {
         public AddBlockResponse addBlock(AddBlockRequest request)
         {
-            AddBlockResponse response = new AddBlockResponse();
+            AddBlockResponse response = new AddBlockResponse("");
             try
             {
 

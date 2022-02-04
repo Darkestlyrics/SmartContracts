@@ -5,22 +5,22 @@ namespace Milk.SmartContract.Core.Implementation
     public class SmartContract
     {
         internal Guid Id { get; set; }
-        internal string Description { get; set; }
-        internal string Code { get; set; } //TODO make byte[]
+        public string Description { get; set; }
+        public string Code { get; set; } //TODO make byte[]
 
-        private readonly List<ICondition> _conditions;
+        public readonly List<ICondition> Conditions;
 
         public SmartContract(List<ICondition> conditions,string description, string code)
         {
             Id = Guid.NewGuid();
             Description = description;
             Code = code;
-            _conditions = conditions;
+            Conditions = conditions;
         }
 
         public bool IsFulfilled()
         {
-            return _conditions.All(cond => cond.IsConditionFulfilled());
+            return Conditions.All(cond => cond.IsConditionFulfilled());
         }
     }
 }
