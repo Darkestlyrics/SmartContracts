@@ -8,8 +8,7 @@ builder.Services.AddControllers();
 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
-builder.Services.AddScoped(typeof(IBlockChainService),typeof(BlockChainService));
-
+builder.Services.AddScoped<IBlockChainService,BlockChainService>();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

@@ -1,7 +1,6 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using Milk.BlockChain.Web.Core.Interface;
 using Milk.SmartContract.Web.Core.Interface;
 using Milk.SmartContract.Web.Models.Request;
 using Milk.SmartContract.Web.Models.Response;

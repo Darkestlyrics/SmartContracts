@@ -9,5 +9,10 @@
         {
             SmartContract = smartContract;
         }
+
+        public AddSmartContractRequest()
+        {
+            
+        }
     }
 }

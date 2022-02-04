@@ -10,6 +10,11 @@ namespace Milk.SmartContract.Core.Implementation
 
         public readonly List<ICondition> Conditions;
 
+        public SmartContract()
+        {
+            
+        }
+
         public SmartContract(List<ICondition> conditions,string description, string code)
         {
             Id = Guid.NewGuid();

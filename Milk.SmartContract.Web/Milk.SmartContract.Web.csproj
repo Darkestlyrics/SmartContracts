@@ -15,7 +15,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Milk.BlockChain.Web\Milk.BlockChain.Web.csproj" />
     <ProjectReference Include="..\Milk.SmartContract\Milk.SmartContract.csproj" />
   </ItemGroup>
 

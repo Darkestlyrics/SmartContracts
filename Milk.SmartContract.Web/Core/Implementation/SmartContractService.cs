@@ -1,5 +1,4 @@
-﻿using Milk.BlockChain.Web.Models.Response;
-using Milk.SmartContract.Web.Core.Interface;
+﻿using Milk.SmartContract.Web.Core.Interface;
 using Milk.SmartContract.Web.Models.Request;
 using Milk.SmartContract.Web.Models.Response;
 using RestSharp;
@@ -12,7 +11,7 @@ namespace Milk.SmartContract.Web.Core.Implementation
 
         public SmartContractService()
         {
-            RestClientOptions options = new RestClientOptions("http://localhost:5111"); 
+            RestClientOptions options = new RestClientOptions("https://localhost:7111/api/BlockChain/AddBlock"); 
             _restClient = new RestClient(options);
         }
 
@@ -25,9 +24,10 @@ namespace Milk.SmartContract.Web.Core.Implementation
             try
             {
                 RestRequest req = new RestRequest(request.ToString(), Method.Post);
-                AddBlockResponse? blockResponse = await _restClient.PostAsync<AddBlockResponse>(req);
+                
+                var blockResponse = await _restClient.PostAsync(req);
                 response.IsSuccessful = blockResponse.IsSuccessful;
-                response.Message = blockResponse.Message;
+                response.Message = blockResponse.ErrorMessage?? "";
             }
             catch (Exception ex)
             {
