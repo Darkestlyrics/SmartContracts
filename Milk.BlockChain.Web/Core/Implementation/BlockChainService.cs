@@ -1,10 +1,9 @@
-﻿using Milk.BlockChain;
-using Milk.BlockChain.Web.App;
-using Milk.SmartContract.Web.Core.Interface;
-using Milk.SmartContract.Web.Models.Request;
-using Milk.SmartContract.Web.Models.Response;
+﻿using Milk.BlockChain.Web.App;
+using Milk.BlockChain.Web.Core.Interface;
+using Milk.BlockChain.Web.Models.Request;
+using Milk.BlockChain.Web.Models.Response;
 
-namespace Milk.SmartContract.Web.Core.Implementation
+namespace Milk.BlockChain.Web.Core.Implementation
 {
     public class BlockChainService : IBlockChainService
     {

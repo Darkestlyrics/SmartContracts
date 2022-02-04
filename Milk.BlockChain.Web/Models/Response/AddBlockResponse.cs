@@ -1,4 +1,4 @@
-﻿namespace Milk.SmartContract.Web.Models.Response
+﻿namespace Milk.BlockChain.Web.Models.Response
 {
     public class AddBlockResponse
     {

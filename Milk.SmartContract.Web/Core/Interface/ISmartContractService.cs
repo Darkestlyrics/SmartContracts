@@ -5,6 +5,6 @@ namespace Milk.SmartContract.Web.Core.Interface
 {
     public interface ISmartContractService
     {
-        async Task<AddSmartContractResponse> AddSmartContract(AddSmartContractRequest request);
+        Task<AddSmartContractResponse> AddSmartContract(AddSmartContractRequest request);
     }
 }

@@ -21,6 +21,9 @@ namespace Milk.SmartContract.Web.Controllers
 
         [HttpPost]
         [Route("AddSmartContract")]
-        public async Task<> Get()
+        public async Task<AddSmartContractResponse> AddSmartContract(AddSmartContractRequest request)
+        {
+            return await _smartContractService.AddSmartContract(request);
+        }
     }
 }

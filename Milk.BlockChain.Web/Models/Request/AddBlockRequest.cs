@@ -1,4 +1,4 @@
-﻿namespace Milk.SmartContract.Web.Models.Request
+﻿namespace Milk.BlockChain.Web.Models.Request
 {
     public class AddBlockRequest
     {

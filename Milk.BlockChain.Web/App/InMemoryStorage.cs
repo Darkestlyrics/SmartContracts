@@ -2,7 +2,7 @@
 {
     public static class InMemoryStorage
     {
-        //UwU
+        //UwU memowy-kun
         public static List<Chain<SmartContract.Core.Implementation.SmartContract>> SmartContracts = new List<Chain<SmartContract.Core.Implementation.SmartContract>>();
     }
 }
